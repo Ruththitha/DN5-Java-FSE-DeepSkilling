@@ -1,0 +1,10 @@
+com\employee\config\DataLoader.class
+com\employee\EmployeeManagementApplication.class
+com\employee\service\EmployeeService.class
+com\employee\entity\Department.class
+com\employee\controller\DepartmentController.class
+com\employee\controller\EmployeeController.class
+com\employee\entity\Employee.class
+com\employee\service\DepartmentService.class
+com\employee\repository\EmployeeRepository.class
+com\employee\repository\DepartmentRepository.class
