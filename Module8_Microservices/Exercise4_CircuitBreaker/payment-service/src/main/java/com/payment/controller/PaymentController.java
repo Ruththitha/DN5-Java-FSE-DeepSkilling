@@ -1,13 +1,21 @@
 package com.payment.controller;
 
+import com.payment.service.PaymentService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class PaymentController {
 
-    @GetMapping("/payments")
-    public String processPayment() {
-        return "Payment service is running";
+    private final PaymentService paymentService;
+
+    public PaymentController(PaymentService paymentService) {
+        this.paymentService = paymentService;
     }
+
+    @GetMapping("/pay")
+    public String pay() {
+        return paymentService.processPayment();
+    }
+
 }

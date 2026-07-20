@@ -7,7 +7,8 @@ import org.springframework.web.bind.annotation.RestController;
 public class BillingController {
 
     @GetMapping("/billing")
-    public String getBilling() {
-        return "Billing service is running";
+    public String billing() {
+        return "Billing Service Response";
     }
+
 }

@@ -6,8 +6,11 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class ThirdPartyController {
 
-    @GetMapping("/external")
-    public String getExternal() {
-        return "Third party API is running";
+    @GetMapping("/payment")
+    public String payment() {
+
+        return "Payment Successful from Third Party API";
+
     }
+
 }

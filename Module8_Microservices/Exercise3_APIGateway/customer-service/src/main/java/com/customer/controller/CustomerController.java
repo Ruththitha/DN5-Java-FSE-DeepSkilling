@@ -7,7 +7,8 @@ import org.springframework.web.bind.annotation.RestController;
 public class CustomerController {
 
     @GetMapping("/customers")
-    public String getCustomers() {
-        return "Customer service is running";
+    public String customers() {
+        return "Customer Service Response";
     }
+
 }

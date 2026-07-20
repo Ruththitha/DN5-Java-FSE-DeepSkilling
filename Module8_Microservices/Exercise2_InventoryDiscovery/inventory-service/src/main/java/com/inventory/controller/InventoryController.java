@@ -1,13 +1,28 @@
 package com.inventory.controller;
 
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
+import com.inventory.entity.Inventory;
+import com.inventory.service.InventoryService;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @RestController
+@RequestMapping("/inventory")
 public class InventoryController {
 
-    @GetMapping("/inventory")
-    public String getInventory() {
-        return "Inventory service is running";
+    private final InventoryService service;
+
+    public InventoryController(InventoryService service) {
+        this.service = service;
+    }
+
+    @PostMapping
+    public Inventory addInventory(@RequestBody Inventory inventory) {
+        return service.saveInventory(inventory);
+    }
+
+    @GetMapping
+    public List<Inventory> getInventory() {
+        return service.getInventory();
     }
 }
