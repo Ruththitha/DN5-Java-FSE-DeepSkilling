@@ -1,6 +1,6 @@
 # DN5 Java FSE Deep Skilling
 
-This repository contains the hands-on exercises completed as part of the **Cognizant Digital Nurture 5.0 - Java Full Stack Engineer (FSE) Deep Skilling Program**.
+This repository contains all the hands-on exercises completed as part of the **Cognizant Digital Nurture 5.0 - Java Full Stack Engineer (FSE) Deep Skilling Program**.
 
 ---
 
@@ -9,13 +9,14 @@ This repository contains the hands-on exercises completed as part of the **Cogni
 ## Exercise 1 - Singleton Pattern
 
 ### Objective
-Implement the Singleton Design Pattern to ensure that only one instance of a class is created.
+Implement the Singleton Design Pattern to ensure only one instance of a class is created.
 
 ### Files
 - Singleton.java
 - Main.java
 
 ### Output
+
 ```
 Singleton Object Created
 Singleton Method Called
@@ -37,6 +38,7 @@ Create objects without exposing object creation logic.
 - Main.java
 
 ### Output
+
 ```
 Driving Car
 Driving Bike
@@ -129,7 +131,7 @@ Future Value after 5 years: 1276.28
 
 ### JUnit
 
-- Calculator
+- Calculator Testing
 - Assertions
 - AAA Pattern
 - Setup & Teardown
@@ -155,6 +157,15 @@ Future Value after 5 years: 1276.28
 - VerifyInteractionTest.java
 - LoggingExample.java
 
+### Technologies
+
+- Java
+- JUnit 5
+- Mockito
+- SLF4J
+- Logback
+- Maven
+
 ---
 
 # Module 5 - Spring Core and Maven
@@ -163,7 +174,7 @@ Future Value after 5 years: 1276.28
 
 ### Objective
 
-Configure Spring Beans using XML.
+Configure Spring Beans using XML Configuration.
 
 ### Files
 
@@ -172,12 +183,12 @@ Configure Spring Beans using XML.
 - BookRepository.java
 - applicationContext.xml
 
-### Concepts
+### Concepts Covered
 
-- Spring IoC
+- Spring IoC Container
 - Dependency Injection
 - Bean Configuration
-- Maven
+- Maven Build
 
 ### Output
 
@@ -196,28 +207,20 @@ Displaying Book Repository
 
 - Spring Boot Project
 - Spring Data JPA
-- Hibernate
+- Hibernate ORM
 - CRUD Operations
-- Entity Mapping
+- Entity Relationships
 - Repository Layer
 - Service Layer
 - REST Controllers
 - H2 Database
 - Pagination & Sorting
 - Auditing
-- SonarQube Ready Structure
-
-### Project Structure
-
-- Employee Entity
-- Department Entity
-- Repository Layer
-- Service Layer
-- Controller Layer
 
 ### Technologies
 
-- Spring Boot
+- Java 17
+- Spring Boot 3
 - Spring Data JPA
 - Hibernate
 - H2 Database
@@ -227,30 +230,24 @@ Displaying Book Repository
 
 # Module 7 - Spring REST using Spring Boot
 
-## Hands-on Completed
+## Exercises Completed
 
 ### Exercise 1
-
 Hello World REST API
 
 ### Exercise 2
-
 Country REST API
 
 ### Exercise 3
-
 Get Country by Country Code
 
 ### Exercise 4
-
 Spring XML Configuration
 
 ### Exercise 5
-
 REST CRUD Operations
 
 ### Exercise 6
-
 JWT Authentication API
 
 ### REST Endpoints
@@ -267,9 +264,136 @@ JWT Authentication API
 - Spring Boot 3
 - Spring Web
 - REST API
-- Maven
 - JWT Authentication
+- Maven
 - Java 17
+
+---
+
+# Module 8 - Microservices with Spring Boot 3 and Spring Cloud
+
+## Exercise 1 - User Order Management
+
+### Objective
+
+Build two independent microservices (User Service and Order Service) using Spring Boot.
+
+### Services
+
+- User Service
+- Order Service
+
+### Features
+
+- REST APIs
+- Spring Boot
+- Maven Project Structure
+- Layered Architecture
+
+### Sample Endpoints
+
+| Service | Endpoint |
+|---------|----------|
+| User Service | GET /users |
+| Order Service | GET /orders |
+
+---
+
+## Exercise 2 - Service Discovery using Eureka & Config Server
+
+### Objective
+
+Implement Service Discovery using Netflix Eureka and centralized configuration using Spring Cloud Config Server.
+
+### Components
+
+- Config Server
+- Eureka Server
+- Inventory Service
+- Product Service
+
+### Features
+
+- Spring Cloud Config
+- Eureka Service Registration
+- Centralized Configuration
+- Service Discovery
+
+### Sample Endpoints
+
+| Service | Endpoint |
+|---------|----------|
+| Inventory Service | /inventory |
+| Product Service | /products |
+| Eureka Dashboard | http://localhost:8761 |
+
+---
+
+## Exercise 3 - API Gateway
+
+### Objective
+
+Route requests through Spring Cloud API Gateway.
+
+### Components
+
+- API Gateway
+- Customer Service
+- Billing Service
+
+### Features
+
+- Spring Cloud Gateway
+- Route Configuration
+- Request Routing
+- Centralized Access
+
+### Sample Endpoints
+
+| Endpoint | Description |
+|----------|-------------|
+| /customer | Customer Service |
+| /billing | Billing Service |
+
+---
+
+## Exercise 4 - Circuit Breaker using Resilience4j
+
+### Objective
+
+Implement fault tolerance using Resilience4j Circuit Breaker.
+
+### Components
+
+- Payment Service
+- Third Party API
+
+### Features
+
+- Resilience4j
+- Circuit Breaker Pattern
+- RestTemplate
+- Fallback Method
+
+### Sample Endpoints
+
+| Endpoint | Description |
+|----------|-------------|
+| /pay | Process Payment |
+
+### Output (Service Running)
+
+```
+Payment Successful from Third Party API
+```
+
+### Output (Fallback)
+
+```
+Third Party API is down.
+Payment Failed.
+Fallback Executed.
+```
 
 ---
 
@@ -277,18 +401,24 @@ JWT Authentication API
 
 - Java 17
 - Spring Framework
-- Spring Boot
+- Spring Boot 3
+- Spring Core
 - Spring Data JPA
 - Hibernate
 - Spring REST
+- Spring Cloud
+- Spring Cloud Config
+- Eureka Server
+- Spring Cloud Gateway
+- Resilience4j
+- Maven
 - Oracle SQL
 - PL/SQL
-- Maven
-- JUnit
+- JUnit 5
 - Mockito
 - SLF4J
 - Logback
-- JWT
+- JWT Authentication
 - Git
 - GitHub
 - Visual Studio Code
@@ -307,9 +437,37 @@ DN5-Java-FSE-DeepSkilling
 ├── Module5_SpringCore_Maven
 ├── Module6_SpringDataJPA
 ├── Module7_SpringREST
+├── Module8_Microservices
+│   ├── Exercise1_UserOrderManagement
+│   ├── Exercise2_InventoryDiscovery
+│   ├── Exercise3_APIGateway
+│   └── Exercise4_CircuitBreaker
 │
 └── README.md
 ```
+
+---
+
+# Learning Outcomes
+
+After completing this repository, I gained practical experience in:
+
+- Design Patterns
+- Data Structures & Algorithms
+- PL/SQL Programming
+- Test Driven Development (TDD)
+- Logging Frameworks
+- Spring Core & Dependency Injection
+- Spring Data JPA & Hibernate
+- RESTful Web Services
+- JWT Authentication
+- Microservices Architecture
+- Service Discovery (Eureka)
+- Spring Cloud Config
+- API Gateway
+- Circuit Breaker (Resilience4j)
+- Maven Project Management
+- Git & GitHub
 
 ---
 
