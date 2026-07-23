@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f7fb;
+  color: #222;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.app {
+  padding: 24px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+button {
+  margin: 8px 8px 0 0;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background: #2563eb;
+  color: white;
+}
+
+input {
+  padding: 8px;
+  margin-right: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
