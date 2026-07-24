@@ -1,0 +1,17 @@
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.App ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.App li {
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+  max-width: 400px;
+  margin: 0 auto;
+}
